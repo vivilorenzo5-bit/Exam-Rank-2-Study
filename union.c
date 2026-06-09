@@ -10,10 +10,10 @@ int	main(int argc, char **argv)
 	{
 		while (argv[1][i])
 		{
-			if (visto[(unsigned char)argv[1][i]] == 0)
+			if (visto[argv[1][i]] == 0)
 			{
 				write(1, &argv[1][i], 1);
-				visto[(unsigned char)argv[1][i]] = 1;
+				visto[argv[1][i]] = 1;
 			}
 			i++;
 		}
@@ -22,10 +22,10 @@ int	main(int argc, char **argv)
 
 		while (argv[2][i])
 		{
-			if (visto[(unsigned char)argv[2][i]] == 0)
+			if (visto[argv[2][i]] == 0)
 			{
 				write(1, &argv[2][i], 1);
-				visto[(unsigned char)argv[2][i]] = 1;
+				visto[argv[2][i]] = 1;
 			}
 			i++;
 		}
